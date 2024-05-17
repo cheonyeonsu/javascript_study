@@ -8,6 +8,6 @@ function checkUsername(){
 }
 
 let elUsername = document.getElementById('username');
-elUsername.addEventListener('blur', checkUername, false);
+elUsername.addEventListener('blur', checkUsername, false);
                             //blur가 일어나면 checkUername호출
 //html은 html이고 js는 js.                             

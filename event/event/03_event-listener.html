@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Event Listener</title>
+    <link rel="stylesheet" href="css/c06.css" />
+  </head>
+  <body>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+    <div id="page">
+      <h1>List King</h1>
+      <h2>새 계정 만들기</h2>
+      <form method="post" action="http://www.example.org/register"> <!--post: 주소를 보안으로 보낸다-->
+
+        <label for="username">사용자 이름 : </label>
+        <input type="text" id="username" onblur="checkUsername()" />
+        <!--onblur: 포커스가 다른쪽으로 이동하면.-->
+        <div id="feedback"></div>
+
+        <label for="password">비밀번호 : </label>
+        <input type="password" id="password" />
+
+        <input type="submit" value="계정 생성!" />
+
+      </form>
+    </div>
+    <!--호이스팅 : 미리 함수를 당겨서 알고있음-->
+    <script src="js/event-listener.js"></script>
+  </body>
+</html>
